@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Package",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "env": {
+        "DB_HOST": "localhost",
+        "DB_USER": "postgres",
+        "DB_PASSWORD": "postgres",
+        "DB_NAME": "hospital_db",
+        "DB_PORT": "5432",
+        "JWT_SECRET": "your-secret-key"
+      }
+    },
+    {
+      "name": "Test Current File",
+      "type": "go",
+      "request": "launch",
+      "mode": "test",
+      "program": "${file}"
+    }
+  ]
+}
